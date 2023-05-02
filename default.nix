@@ -15,4 +15,6 @@ with nixpkgs;
 
   inherit (callPackage ./pkgs/cilium-cli { inherit nixpkgs; })
     cilium-cli;
+
+  use-nvm = callPackage ./pkgs/use-nvm {};
 }
